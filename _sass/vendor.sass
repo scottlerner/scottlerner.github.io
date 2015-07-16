@@ -85,12 +85,19 @@
   margin: 0 0.25em
 
 html
+  height: 100%
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
 
-body > footer
+body
   display: -webkit-flex
-  -webkit-justify-content: space-between
+  -webkit-flex-direction: column
+  > footer
+    display: -webkit-flex
+    -webkit-justify-content: space-between
+
+article
+  -webkit-flex-grow: 1
 
 \::-webkit-scrollbar
   width: 6px
