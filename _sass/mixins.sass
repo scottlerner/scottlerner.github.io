@@ -12,10 +12,12 @@
     @if $is_white
         > *
             padding: 1em calc(#{$padding} - #{$padding / 5% * 1em})
+            width: 100%
     @else
         padding: 0 calc(#{$padding * 0.8} - #{$padding * 0.8 / 5% * 1em})
         > *
             padding: 1em calc(13% - 1.6em)
+            width: 100%
 
 =article_background($background, $anchor)
     +contrast($background)
